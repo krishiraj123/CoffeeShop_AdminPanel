@@ -3,7 +3,7 @@
 <main id="main" class="main">
     <div class="pagetitle">
         <h1>Project List</h1>
-        <nav>
+        <nav class="d-flex justify-content-between">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <a asp-controller="Home" asp-action="Index">Home</a>
@@ -11,10 +11,12 @@
                 <li class="breadcrumb-item">Tables</li>
                 <li class="breadcrumb-item active">Data</li>
             </ol>
+            <a class="btn btn-success" asp-controller="Project" asp-action="ProjectAddEdit">ADD</a>
         </nav>
     </div>
+
     <div>
-        <table class="table datatable table table-striped table-bordered table-hover table-responsive">
+        <table class="table datatable table-striped table-bordered table-hover table-responsive">
             <thead>
             <tr>
                 <th>ProjectID</th>
@@ -30,44 +32,45 @@
             <tbody>
             @foreach (DataRow dr in Model.Rows)
             {
-                <tr>
-                    <td>@dr["ProjectID"]</td>
-                    <td>@dr["ProjectName"]</td>
-                    <td>@dr["Description"]</td>
-                    <td>@dr["Status"]</td>
-                    <td>@dr["Budget"]</td>
-                    <td>@dr["CreatedDate"]</td>
-                    <td>@dr["LastUpdated"]</td>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <button type="button" class="btn btn-link p-0 mx-3" title="Delete" onclick="confirmDelete('@dr["ProjectID"]')">
-                                <i class="fas fa-trash text-danger"></i>
-                            </button>
-                            <a asp-controller="Project" asp-action="ProjectAddEdit" asp-route-UserID="@dr["ProjectID"]" class="btn btn-link p-0" title="Edit">
-                                <i class="fas fa-edit text-warning"></i>
-                            </a>
-                        </div>
-                    </td>
-                </tr>
+            <tr>
+                <td>@dr["ProjectID"]</td>
+                <td>@dr["ProjectName"]</td>
+                <td>@dr["Description"]</td>
+                <td>@dr["Status"]</td>
+                <td>@dr["Budget"]</td>
+                <td>@dr["CreatedDate"]</td>
+                <td>@dr["LastUpdated"]</td>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-link p-0 mx-3" title="Delete" onclick="confirmDelete('@dr["ProjectID"]')">
+                            <i class="fas fa-trash text-danger"></i>
+                        </button>
+                        <a asp-controller="Project" asp-action="ProjectAddEdit" asp-route-ProjectID="@dr["ProjectID"]" class="btn btn-link p-0" title="Edit">
+                            <i class="fas fa-edit text-warning"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
             }
             </tbody>
         </table>
     </div>
 </main>
+
 <script>
-    const confirmDelete = (ProjectID)=>{
+    function confirmDelete(ProjectID) {
         Swal.fire({
             title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            text: "This action cannot be undone.",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
-        }).then((res)=>{
-            if(res.isConfirmed){
-                window.location.href = @Url.Action("ProjectDelete","Project") + "?ProjectID="+ProjectID;
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '@Url.Action("ProjectDelete", "Project")' + '?ProjectID=' + ProjectID;
             }
-        })
+        });
     }
 </script>
