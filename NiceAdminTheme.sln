@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NiceAdminTheme", "NiceAdminTheme\NiceAdminTheme.csproj", "{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5889C55D-155C-4B0F-BC7C-DB1AFD569835}
+	EndGlobalSection
+EndGlobal

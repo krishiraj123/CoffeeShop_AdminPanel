@@ -1,0 +1,87 @@
+﻿@model NiceAdminTheme.Models.CustomerModel
+<main id="main" class="main">
+    <h3>@(Model.CustomerID == null ? "Add" : "Update") Customer</h3>
+    <form asp-action="CustomerSave" method="post" class="row g-3">
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="CustomerID" type="hidden" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input type="text" asp-for="CustomerName" class="form-control" id="floatingCustomerName" placeholder="Customer Name">
+                <label for="floatingCustomerName" asp-for="CustomerName">Customer Name</label>
+                <span class="text-danger" asp-validation-for="CustomerName"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input type="text" asp-for="HomeAddress" class="form-control" id="floatingHomeAddress" placeholder="Home Address">
+                <label for="floatingHomeAddress" asp-for="HomeAddress">Home Address</label>
+                <span class="text-danger" asp-validation-for="HomeAddress"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input type="email" asp-for="Email" class="form-control" id="floatingEmail" placeholder="Email">
+                <label for="floatingEmail" asp-for="Email">Email</label>
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="MobileNo" type="text" class="form-control" id="floatingMobileNo" placeholder="Mobile No">
+                <label for="floatingMobileNo" asp-for="MobileNo">Mobile No</label>
+                <span class="text-danger" asp-validation-for="MobileNo"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="GSTNO" type="text" class="form-control" id="floatingGSTNO" placeholder="GST NO">
+                <label for="floatingGSTNO" asp-for="GSTNO">GST NO</label>
+                <span class="text-danger" asp-validation-for="GSTNO"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input type="text" asp-for="CityName" class="form-control" id="floatingCityName" placeholder="City Name">
+                <label for="floatingCityName" asp-for="CityName">City Name</label>
+                <span class="text-danger" asp-validation-for="CityName"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="PinCode" type="text" class="form-control" id="floatingPinCode" placeholder="Pin Code">
+                <label for="floatingPinCode" asp-for="PinCode">Pin Code</label>
+                <span class="text-danger" asp-validation-for="PinCode"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input asp-for="NetAmount" type="number" class="form-control" id="floatingNetAmount" placeholder="Net Amount" step="0.01" min="">
+                <label for="floatingNetAmount" asp-for="NetAmount">Net Amount</label>
+                <span class="text-danger" asp-validation-for="NetAmount"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                @if (ViewBag.UserList != null)
+                {
+                    <select class="form-control" asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))">
+                        <option value="">Select User</option>
+                    </select>
+                    <label for="floatingUserID" asp-for="UserID">Select User</label>
+                }
+                <span class="text-danger" asp-validation-for="UserID"></span>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-danger">
+                <a asp-action="CustomerList" asp-controller="Customer" class="nav-link">
+                    Back
+                </a>
+            </button>
+        </div>
+    </form>
+</main>

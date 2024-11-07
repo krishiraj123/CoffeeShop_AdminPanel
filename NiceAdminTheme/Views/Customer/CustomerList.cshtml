@@ -1,0 +1,106 @@
+﻿@using System.Data
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Customer List</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Tables</li>
+                <li class="breadcrumb-item active">Data</li>
+            </ol>
+            <button class="btn btn-outline-primary">
+                <a asp-action="CustomerAddEdit" asp-controller="Customer" class="nav-link">Add Customers</a>
+            </button>
+            <button class="btn btn-primary">
+                <a asp-action="CustomerExportExcel" asp-controller="Customer" class="nav-link">Export Customers</a>
+            </button>
+        </nav>
+    </div>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-octagon me-1"></i>
+            <span>@TempData["ErrorMessage"]</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer Data</h5>
+                        <p class="card-text">Here you can manage your customers. Use the buttons to add, edit, or delete customer records.</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>CustomerID</th>
+                                        <th>CustomerName</th>
+                                        <th>HomeAddress</th>
+                                        <th>Email</th>
+                                        <th>MobileNo</th>
+                                        <th>GST NO</th>
+                                        <th>CityName</th>
+                                        <th>PinCode</th>
+                                        <th>NetAmount</th>
+                                        <th>UserName</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (DataRow data in Model.Rows)
+                                    {
+                                        <tr>
+                                            <td class="text-center">@data["CustomerID"]</td>
+                                            <td>@data["CustomerName"]</td>
+                                            <td>@data["HomeAddress"]</td>
+                                            <td>@data["Email"]</td>
+                                            <td>@data["MobileNo"]</td>
+                                            <td>@data["GSTNO"]</td>
+                                            <td>@data["CityName"]</td>
+                                            <td>@data["PinCode"]</td>
+                                            <td class="text-end">$@data["NetAmount"]</td>
+                                            <td>@data["UserName"]</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <button type="button" class="btn btn-link p-0 mx-2" title="Delete" onclick="confirmDelete('@data["CustomerID"]')">
+                                                        <i class="fas fa-trash text-danger"></i>
+                                                    </button>
+                                                    <a asp-action="CustomerAddEdit" asp-controller="Customer" asp-route-CustomerID="@data["CustomerID"]" class="btn btn-link p-0" title="Edit">
+                                                        <i class="fas fa-edit text-warning"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    function confirmDelete(customerID) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '@Url.Action("CustomerDelete", "Customer")' + '?CustomerID=' + customerID;
+            }
+        })
+    }
+</script>
+

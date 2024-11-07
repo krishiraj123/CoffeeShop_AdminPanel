@@ -1,0 +1,94 @@
+﻿@using System.Data;
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>Bill List</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Tables</li>
+                <li class="breadcrumb-item active">Data</li>
+            </ol>
+            <button class="btn btn-outline-primary"><a asp-action="BillsAddEdit" asp-controller="Bills" class="nav-link">Add Bills</a></button>
+            <button class="btn btn-primary"><a asp-action="BillExportExcel" asp-controller="Bills" class="nav-link">Export Bills</a></button>
+        </nav>
+    </div>
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-exclamation-octagon me-1"></i>
+            <span>@TempData["ErrorMessage"]</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+    }
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table datatable table table-striped table-bordered table-hover table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>BillID</th>
+                                    <th>BillNumber</th>
+                                    <th>BillDate</th>
+                                    <th>OrderID</th>
+                                    <th>TotalAmount</th>
+                                    <th>Discount</th>
+                                    <th>NetAmount</th>
+                                    <th>UserName</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (DataRow data in Model.Rows)
+                                {
+                                    <tr>
+                                        <td class="text-center">@data["BillID"]</td>
+                                        <td>@data["BillNumber"]</td>
+                                        <td>@data["BillDate"]</td>
+                                        <td class="text-center">@data["OrderID"]</td>
+                                        <td class="text-end">$@data["TotalAmount"]</td>
+                                        <td class="text-end">$@data["Discount"]</td>
+                                        <td class="text-end">$@data["NetAmount"]</td>
+                                        <td class="text-end">@data["UserName"]</td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <button type="button" class="btn btn-link p-0 mx-3" title="Delete" onclick="confirmDelete('@data["BillID"]')">
+                                                    <i class="fas fa-trash text-danger"></i>
+                                                </button>
+                                                <a asp-action="BillsAddEdit" asp-controller="Bills" asp-route-BillID="@data["BillID"]" class="btn btn-link p-0" title="Edit">
+                                                    <i class="fas fa-edit text-warning"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<script>
+    function confirmDelete(billID) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '@Url.Action("BillsDelete", "Bills")' + '?BillID=' + billID;
+            }
+        })
+    }
+</script>
