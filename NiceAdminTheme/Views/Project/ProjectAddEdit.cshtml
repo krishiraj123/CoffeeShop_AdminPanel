@@ -1,0 +1,42 @@
+@model NiceAdminTheme.Models.ProjectModel
+@{
+    ViewData["Title"] = "Create Project";
+}
+
+
+<main id="main" class="main">
+    <h3>@(Model.ProjectID == null ? "Add" : "Update") User</h3>
+    <form asp-action="ProjectSave" asp-controller="Project" method="post" class="needs-validation" novalidate>
+        <input asp-for="ProjectID" type="hidden" class="form-control"/>
+        <div class="mb-3">
+            <label asp-for="ProjectName" class="form-label"></label>
+            <input type="text" asp-for="ProjectName" class="form-control"/>
+            <span asp-validation-for="ProjectName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Status" class="form-label"></label>
+            <select asp-for="Status" class="form-select">
+                <option value="">Select status</option>
+                <option value="Active">Active</option>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Budget" class="form-label"></label>
+            <input asp-for="Budget" class="form-control" type="number"/>
+            <span asp-validation-for="Budget" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</main>

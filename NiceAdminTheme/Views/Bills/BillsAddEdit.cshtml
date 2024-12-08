@@ -1,0 +1,78 @@
+﻿@model NiceAdminTheme.Models.BillsModel
+<main id="main" class="main">
+    <h3>@(Model.BillID == null ? "Add" : "Update") Bill</h3>
+    <form asp-action="BillsSave" method="post" class="row g-3">
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="BillID" type="hidden" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input type="text" asp-for="BillNumber" class="form-control" id="floatingBillNumber" placeholder="Bill Number">
+                <label for="floatingBillNumber" >Bill Number</label>
+                <span class="text-danger" asp-validation-for="BillNumber"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input type="datetime" asp-for="BillDate" class="form-control" id="floatingBillDate" placeholder="Bill Date" value="@(DateTime.Now.ToString("yyyy-MM-dd"))">
+                <label for="floatingBillDate">Bill Date</label>
+                <span class="text-danger" asp-validation-for="BillDate"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                @if (ViewBag.OrderList != null)
+                {
+                    <select class="form-control" asp-for="OrderID" asp-items="@(new SelectList(ViewBag.OrderList, "OrderID", "OrderID"))">
+                        <option value="">Select OrderID</option>
+                    </select>
+                    <label for="floatingOrderID" asp-for="OrderID">Select OrderID</label>
+                }
+                <span class="text-danger" asp-validation-for="OrderID"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="number" asp-for="TotalAmount" class="form-control" id="floatingTotalAmount" placeholder="Total Amount" step="0.01" min="">
+                <label for="floatingTotalAmount" >Total Amount</label>
+                <span class="text-danger" asp-validation-for="TotalAmount"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="number" asp-for="Discount" class="form-control" id="floatingDiscount" placeholder="Discount" step="0.01" min="">
+                <label for="floatingDiscount" >Discount</label>
+                <span class="text-danger" asp-validation-for="Discount"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input type="number" asp-for="NetAmount" class="form-control" id="floatingNetAmount" placeholder="Net Amount" step="0.01" min="">
+                <label for="floatingNetAmount" >Net Amount</label>
+                <span class="text-danger" asp-validation-for="NetAmount"></span>
+            </div>
+        </div>
+       <div class="col-md-4">
+            <div class="form-floating mb-3">
+                @if (ViewBag.UserList != null)
+                {
+                    <select class="form-control" asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))">
+                        <option value="">Select User</option>
+                    </select>
+                    <label for="floatingUserID" asp-for="UserID">Select User</label>
+                }
+                <span class="text-danger" asp-validation-for="UserID"></span>
+            </div>
+        </div> 
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-danger">
+                <a asp-action="ListBills" asp-controller="Bills" style="color: white; text-decoration: none;">
+                    Back
+                </a>
+            </button>
+        </div>
+    </form>
+</main>

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\krish\\Desktop\\CoffeeShop\\CoffeeShop_AdminPanel-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}|NiceAdminTheme\\NiceAdminTheme.csproj|c:\\users\\krish\\desktop\\coffeeshop\\coffeeshop_adminpanel-main\\niceadmintheme\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}|NiceAdminTheme\\NiceAdminTheme.csproj|solutionrelative:niceadmintheme\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}|NiceAdminTheme\\NiceAdminTheme.csproj|c:\\users\\krish\\desktop\\coffeeshop\\coffeeshop_adminpanel-main\\niceadmintheme\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93B85E8C-3ED9-4FFB-B42E-40A825FC3BEF}|NiceAdminTheme\\NiceAdminTheme.csproj|solutionrelative:niceadmintheme\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\krish\\Desktop\\CoffeeShop\\CoffeeShop_AdminPanel-main\\NiceAdminTheme\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "NiceAdminTheme\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\krish\\Desktop\\CoffeeShop\\CoffeeShop_AdminPanel-main\\NiceAdminTheme\\Controllers\\UserController.cs",
+              "RelativeToolTip": "NiceAdminTheme\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T14:29:41.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "C:\\Users\\krish\\Desktop\\CoffeeShop\\CoffeeShop_AdminPanel-main\\NiceAdminTheme\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "NiceAdminTheme\\Controllers\\CountryController.cs",
+              "ToolTip": "C:\\Users\\krish\\Desktop\\CoffeeShop\\CoffeeShop_AdminPanel-main\\NiceAdminTheme\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "NiceAdminTheme\\Controllers\\CountryController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T14:28:58.389Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

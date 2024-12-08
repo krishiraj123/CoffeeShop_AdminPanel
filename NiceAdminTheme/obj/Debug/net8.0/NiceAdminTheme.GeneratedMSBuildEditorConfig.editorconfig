@@ -1,0 +1,295 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NiceAdminTheme
+build_property.RootNamespace = NiceAdminTheme
+build_property.ProjectDir = C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Bills/BillsAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcQmlsbHNBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Bills/ListBills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbHNcTGlzdEJpbGxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Chart/ApexChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcQXBleENoYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Chart/Chart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcQ2hhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Chart/EChart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcRUNoYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Accordion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xBY2NvcmRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xBbGVydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Badges.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xCYWRnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/BreadCrumbs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xCcmVhZENydW1icy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xCdXR0b25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Cards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDYXJkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDYXJvdXNlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/ListGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xMaXN0R3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Pagination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xQYWdpbmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Progress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xQcm9ncmVzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Spinners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xTcGlubmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/Tabs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xUYWJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Components/ToolTips.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xUb29sVGlwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Country/CountryAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxDb3VudHJ5QWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Country/CountryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxDb3VudHJ5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Customer/CustomerAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Customer/CustomerList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3VzdG9tZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Department/InsertDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbnNlcnREZXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Department/ListDepartments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxMaXN0RGVwYXJ0bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Department/UpdateDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxVcGRhdGVEZXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/EmployeeProject/AddEmployeeProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVQcm9qZWN0XEFkZEVtcGxveWVlUHJvamVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/EmployeeProject/EditEmployeeProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVQcm9qZWN0XEVkaXRFbXBsb3llZVByb2plY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/EmployeeProject/ListEmployeeProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVQcm9qZWN0XExpc3RFbXBsb3llZVByb2plY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Employee/EditEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdEVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Employee/InsertEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5zZXJ0RW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Employee/ListEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTGlzdEVtcGxveWVlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Error/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Forms/FormEditors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRm9ybUVkaXRvcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Forms/FormElements.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRm9ybUVsZW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Forms/FormLayouts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRm9ybUxheW91dHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Forms/FormValidation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybXNcRm9ybVZhbGlkYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Icons/BootStrap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcQm9vdFN0cmFwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Icons/Boxicons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcQm94aWNvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Icons/Remix.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWNvbnNcUmVtaXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/OrderDetail/ListOrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcTGlzdE9yZGVyRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/OrderDetail/OrderDetailAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcT3JkZXJEZXRhaWxBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Order/OrderAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Order/OrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Pages/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Pages/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRkFRLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Product/ProductAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0QWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Product/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Profile/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Project/ListProjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxMaXN0UHJvamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Project/ProjectAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdFxQcm9qZWN0QWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/State/StateAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVcU3RhdGVBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/State/StateList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGVcU3RhdGVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Table/DataTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcRGF0YVRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Table/GeneralTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcR2VuZXJhbFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/User/UserAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/User/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/krish/Desktop/CoffeeShop/CoffeeShop_AdminPanel-main/NiceAdminTheme/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bzc8pgtnj5

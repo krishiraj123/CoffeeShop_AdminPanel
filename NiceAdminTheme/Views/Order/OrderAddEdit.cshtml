@@ -1,0 +1,80 @@
+﻿@model NiceAdminTheme.Models.OrderModel
+<main id="main" class="main">
+    <h3>@(Model.OrderID == null ? "Add" : "Update") Order</h3>
+    <form asp-action="OrderSave" method="post" class="row g-3">
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="OrderID" type="hidden" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="OrderDate" type="datetime" class="form-control" id="floatingOrderDate" placeholder="Order Date" value="@(DateTime.Now.ToString("yyyy-MM-dd"))" required>
+                <label for="floatingOrderDate" asp-for="OrderDate">Order Date</label>
+                <span class="text-danger" asp-validation-for="OrderDate"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                @if (ViewBag.customerList != null)
+                {
+                    <select class="form-control" name="CustomerID">
+                        <option value="" selected>Select Customer</option>
+                        @foreach (var customer in ViewBag.customerList)
+                        {
+                            <option value="@customer.CustomerID">@customer.CustomerName</option>
+                        }
+                    </select>
+                    <label for="floatingCustomerID" asp-for="CustomerID">Select Customer</label>
+                }
+                    <span class="text-danger" asp-validation-for="CustomerID"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input asp-for="PaymentMode" type="text" class="form-control" id="floatingPaymentMode" placeholder="Payment Mode">
+                <label for="floatingPaymentMode" asp-for="PaymentMode">Payment Mode</label>
+                <span class="text-danger" asp-validation-for="PaymentMode"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input asp-for="TotalAmount" type="number" class="form-control" id="floatingTotalAmount" placeholder="Total Amount" step="0.01" min="">
+                <label for="floatingTotalAmount" asp-for="TotalAmount">Total Amount</label>
+                <span class="text-danger" asp-validation-for="TotalAmount"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea asp-for="ShippingAddress" class="form-control" id="floatingShippingAddress" placeholder="Shipping Address" style="height: 100px;"></textarea>
+                <label for="floatingShippingAddress" asp-for="ShippingAddress">Shipping Address</label>
+                 <span class="text-danger" asp-validation-for="ShippingAddress"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                @if (ViewBag.UserList != null)
+                {
+                    <select class="form-control" name="UserID">
+                        <option value="" selected>Select User</option>
+                        @foreach (var user in ViewBag.UserList)
+                        {
+                            <option value="@user.UserID">@user.UserName</option>
+                        }
+                    </select>
+
+                    <label for="floatingUserID" asp-for="UserID">Select User</label>
+                }
+                    <span class="text-danger" asp-validation-for="UserID"></span>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-danger">
+                <a asp-action="OrderList" asp-controller="Order" style="color: white; text-decoration: none;">
+                    Back
+                </a>
+            </button>
+        </div>
+    </form>
+</main>

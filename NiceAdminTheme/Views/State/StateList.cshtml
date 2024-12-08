@@ -1,0 +1,93 @@
+@using System.Data
+@model DataTable
+
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h1>State List</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Tables</li>
+                <li class="breadcrumb-item active">State Data</li>
+            </ol>
+            <button class="btn btn-outline-primary">
+                <a asp-action="StateAddEdit" asp-controller="State" class="nav-link">Add State</a>
+            </button>
+        </nav>
+    </div><!-- End Page Title -->
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-octagon me-1"></i>
+        <span>@TempData["ErrorMessage"]</span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    }
+
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">State Data Table</h5>
+
+                        <!-- Table -->
+                        <table class="table datatable table-striped table-bordered table-hover table-responsive">
+                            <thead>
+                            <tr class="text-nowrap">
+                                <th>State ID</th>
+                                <th>State Name</th>
+                                <th>State Code</th>
+                                <th>Country Name</th>
+                                <th>User ID</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (DataRow data in Model.Rows)
+                            {
+                            <tr>
+                                <td class="text-center">@data["StateID"]</td>
+                                <td>@data["StateName"]</td>
+                                <td>@data["StateCode"]</td>
+                                <td>@data["CountryName"]</td>
+                                <td>@data["UserName"]</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <button type="button" class="btn btn-link p-0 mx-3" title="Delete" onclick="confirmDelete('@data["StateID"]')">
+                                            <i class="fas fa-trash text-danger"></i>
+                                        </button>
+                                        <a asp-controller="State" asp-action="StateAddEdit" asp-route-StateID="@data["StateID"]" class="btn btn-link p-0" title="Edit">
+                                            <i class="fas fa-edit text-warning"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    function confirmDelete(stateID) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = '@Url.Action("DeleteState", "State")' + '?StateID=' + stateID;
+            }
+        });
+    }
+</script>

@@ -1,0 +1,65 @@
+﻿@model NiceAdminTheme.Models.UserModel
+
+<main id="main" class="main">
+    <h3>@(Model.UserID == null?"Add":"Update") User</h3>
+    <form asp-action="UserSave" method="post" class="row g-3">
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="UserID" type="hidden" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="UserName" type="text" class="form-control" id="floatingName" placeholder="User Name">
+                <label for="floatingName">User Name</label>
+                <span class="text-danger" asp-validation-for="UserName"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <input asp-for="Email" type="email" class="form-control" id="floatingEmail" placeholder="Email">
+                <label for="floatingEmail">Email</label>
+                <span class="text-danger" asp-validation-for="Email"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input asp-for="Password" class="form-control" id="floatingpass" placeholder="Password">
+                <label for="floatingpass">Password</label>
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <input asp-for="MobileNo" type="text" class="form-control" id="floatingMobileNo" placeholder="MobileNo">
+                <label for="floatingMobileNo">Mobile Number</label>
+                <span class="text-danger" asp-validation-for="MobileNo"></span>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea asp-for="Address" class="form-control" placeholder="Address" id="floatingTextarea" style="height: 100px;"></textarea>
+                <label for="floatingTextarea">Address</label>
+                <span class="text-danger" asp-validation-for="Address"></span>
+            </div>
+        </div>       
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <div class="d-flex gap-3">
+                    <label for="floatingStatusCheck" class="form-check-label fw-bold">Status</label>
+                    <input type="radio" asp-for="IsActive" class="form-check-input" id="floatingStatusCheck" value="true" /> True
+                    <input type="radio" asp-for="IsActive" class="form-check-input" id="floatingStatusCheck" value="false" /> False
+                </div>                
+                <span class="text-danger" asp-validation-for="IsActive"></span>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-danger">
+                <a asp-action="UserList" asp-controller="User" class="nav-link">
+                    Back
+                </a>
+            </button>
+        </div>
+    </form>
+</main>
