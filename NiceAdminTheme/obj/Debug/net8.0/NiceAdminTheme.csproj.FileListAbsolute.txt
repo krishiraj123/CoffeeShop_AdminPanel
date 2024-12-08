@@ -176,3 +176,4 @@ C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme\obj\
 C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme\obj\Debug\net8.0\NiceAdminTheme.pdb
 C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme\obj\Debug\net8.0\NiceAdminTheme.genruntimeconfig.cache
 C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme\obj\Debug\net8.0\ref\NiceAdminTheme.dll
+C:\Users\krish\Desktop\CoffeeShop\CoffeeShop_AdminPanel-main\NiceAdminTheme\obj\Debug\net8.0\NiceAdminTheme.sourcelink.json
