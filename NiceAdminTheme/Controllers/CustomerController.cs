@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Data;
 using OfficeOpenXml;
 
-namespace NiceAdminTheme.Controllers
+namespace NiceAdminTheme.Controllers 
 {
     public class CustomerController : Controller
     {
@@ -15,7 +15,7 @@ namespace NiceAdminTheme.Controllers
             this._configuration = configuration;
         }
         #endregion Iconfiguration
-
+    
         #region GetCustomerData
         private SqlDataReader GetCustomerData()
         {
