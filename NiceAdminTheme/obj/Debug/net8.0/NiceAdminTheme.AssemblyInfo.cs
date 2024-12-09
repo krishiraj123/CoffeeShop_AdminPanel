@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NiceAdminTheme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+154eb29631b0c71fbe6de094c6b2efc66e953466")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36c631e3f702a6b602a8f233210f53a2915cd580")]
 [assembly: System.Reflection.AssemblyProductAttribute("NiceAdminTheme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NiceAdminTheme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

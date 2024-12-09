@@ -11,7 +11,7 @@
                 <li class="breadcrumb-item active">State Data</li>
             </ol>
             <button class="btn btn-outline-primary">
-                <a asp-action="StateAddEdit" asp-controller="State" class="nav-link">Add City</a>
+                <a asp-action="CityAddEdit" asp-controller="City" class="nav-link">Add City</a>
             </button>
         </nav>
     </div><!-- End Page Title -->
@@ -58,7 +58,7 @@
                                         <button type="button" class="btn btn-link p-0 mx-3" title="Delete" onclick="confirmDelete('@data["CityID"]')">
                                             <i class="fas fa-trash text-danger"></i>
                                         </button>
-                                        <a asp-controller="State" asp-action="CityAddEdit" asp-route-StateID="@data["CityID"]" class="btn btn-link p-0" title="Edit">
+                                        <a asp-controller="City" asp-action="CityAddEdit" asp-route-CityID="@data["CityID"]" class="btn btn-link p-0" title="Edit">
                                             <i class="fas fa-edit text-warning"></i>
                                         </a>
                                     </div>

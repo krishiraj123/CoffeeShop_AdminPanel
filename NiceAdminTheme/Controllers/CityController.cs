@@ -45,9 +45,11 @@ public class CityController : Controller
     {
         SqlCommand cmd = Connection();
         CityModel cm = new CityModel();
+        
         if (CityID.HasValue)
         {
             cmd.CommandText = "PR_City_SelectByID";
+            cmd.Parameters.AddWithValue("CityID", CityID);
             SqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.Read())
